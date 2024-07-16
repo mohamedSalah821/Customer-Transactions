@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Transactions</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    
+</head>
+<body class="day-mode overflow-hidden">
+    <div id="loadingScreen">
+        <i class="fa-solid fa-spinner fa-spin fa-3x"></i>
+    </div>
+    <div class="d-flex justify-content-around align-items-center">
+        <h1 >Customer Transactions</h1>
+        <i class="fa-solid fa-moon fa-2xl" id="toggleNightMode" style="cursor: pointer;"></i>
+
+    </div>
+    <input type="text" class="form-control w-75" id="searchInput" placeholder="Search by customer name or amount">
+    <table class="w-75 mx-auto ">
+        <thead>
+            <tr>
+                <th>Customer Name</th>
+                <th>Total Transaction Amount</th>
+                <th>Transactions per day</th>
+            </tr>
+        </thead>
+        <tbody id="transactionTable">
+
+        </tbody>
+    </table>
+    <div id="chartContainer">
+        <canvas id="transactionChart"></canvas>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

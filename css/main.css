@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+input {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+button {
+    padding: 5px 10px;
+    margin: 0;
+    cursor: pointer;
+}
+
+#chartContainer {
+    width: 80%;
+    margin: 20px auto;
+    display: none;
+}
+
+.fa-solid{
+    
+    transition: all 0.3s;
+}
+.fa-solid:hover{
+    transform: scale(1.3);
+
+}
+body {
+    transition: background-color 0.5s, color 0.5s;
+   /* Hide scroll */
+}
+.night-mode {
+    background-color: #1c1c1c;
+    color: #e0e0e0;
+}
+.day-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+/* Loading Screen Styles */
+#loadingScreen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s;
+}
+#loadingScreen.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+.fa-spinner {
+    font-size: 5rem; /* Increase spinner size */
+}
